@@ -1,0 +1,26 @@
+<creance class="app-page">
+    <header class="header-bar">
+        <div class="left">
+            <a class="btn pull-left myleftarrow" data-navigation="profil"></p></a>
+            <a class="btn pull-right myhome" data-navigation="profil"><p class="myhome"></a>
+            <a class="btn pull-right mylogout" onclick="logout()"></a>
+            <div class="center">
+            <p><h1 class="mytext">Creance</h1></p>
+            </div>
+        </div>
+    </header>
+    <div id="creance-form" class="content myback mycenter mydiv">
+        <select required id="creance-user">
+          <option value="crediteur">Je suis créditeur</option>
+          <option value="debiteur">Je suis débiteur</option>
+        </select>
+
+        <select id="friendoptions" required>
+          
+        </select>
+        <input class="myround" type="date" id="creance-date" required>
+        <input class="myround" type="number" min="0.00" step="0.01" id="creance-montant" placeholder="Montant" required>
+        <input class="myround" type="text" placeholder="Description" id="creance-text">
+        <button type="submit" class="btn fit-parent mybtn2" value="Submit" id="creance-submit">Save</button>
+    </div>
+</creance>

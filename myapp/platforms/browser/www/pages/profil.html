@@ -1,0 +1,195 @@
+<profil class="app-page" id="profilbody">
+    <header class="header-bar">
+        <div class="left">
+            <button class="btn pull-right" data-navigation="profil"><p class="myhome"></p></button>
+            <button class="btn pull-right" onclick="logout()"><p class="mylogout"></p></button>
+            <div class="center">
+                <p><h1 class="mytext">Profil</h1></p>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="content myback mydiv">
+        <div class="center">
+            <img id="photo" class="myphoto"></img>
+            <br>
+            <button class="w3-button w3-tiny mybtn5" id="uploadphoto">Modifier la photo de profil</button>
+        </div>
+        <div class="information">
+            <div id="profil-email">
+            </div>
+            <div id="totalsomme">
+            </div>
+        </div>
+        <hr>
+        <nav class="tabs" style="position: relative">
+            <div class="tab-indicator"></div>
+            <div class="tab-items">
+                <a class="tab-item" >AMIS</a>
+                <a class="tab-item" >Creances</a>
+                <a class="tab-item">Dettes</a>
+            </div>
+        </nav>
+
+
+        <div class="content" data-tab-contents="true" data-disable-swipe="false" data-tab-default="1" style="position: relative">
+            <div class="tab-content" style="position:relative">
+                <div>
+                    <button class="btn mybtn4 fit-parent" data-navigation="addfriend">Ajouter un ami</button>
+
+                    <ul class="list">
+
+                        <li>
+                            <a class="pull-right mydownarrow"></a>
+                            <a class="padded-list" style="background-color: white">Liste des amis</a>
+                            <div class="accordion-content" id="friendlist">
+
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="pull-right mydownarrow"></a>
+                            <a class="padded-list" style="background-color: white">Invitations d'ajout d'ami</a>
+                            <div class="accordion-content" id="friendrequestlist">
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="pull-right mydownarrow"></a>
+                            <a class="padded-list" style="background-color: white">Mes invitations en cours</a>
+                            <div class="accordion-content" id="myfriendrequestlist">
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="tab-content">
+                <div>
+                    <button class="btn mybtn4 fit-parent" data-navigation="creance">Ajouter une créance</button>
+
+                    <ul class="list">
+
+                        <li>
+                            <a class="pull-right mydownarrow"></a>
+                            <a class="padded-list" style="background-color: white">Créances Actives</a>
+                            <div class="accordion-content" id="creance-active-list">
+
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="pull-right mydownarrow"></a>
+                            <a class="padded-list" style="background-color: white">Créances en cours de création</a>
+                            <div class="accordion-content" id="creance-pending-list">
+
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="pull-right mydownarrow"></a>
+                            <a class="padded-list" style="background-color: white">Créances fermées</a>
+                            <div class="accordion-content" id="creance-closed-list">
+
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="pull-right mydownarrow"></a>
+                            <a class="padded-list" style="background-color: white">Créances à clôturer</a>
+                            <div class="accordion-content" id="creance-pending-closed-list">
+
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="pull-right mydownarrow"></a>
+                            <a class="padded-list" style="background-color: white">Invitations de créances</a>
+                            <div class="accordion-content">
+                              <div id="creance-invitation">
+
+                              </div>
+                          </div>
+                      </li>
+
+                  </ul>
+
+
+              </div>
+          </div>
+          <div class="tab-content">
+            <div>
+                <button class="btn mybtn4 fit-parent" data-navigation="creance">Ajouter une dette</button>
+
+
+                <ul class="list">
+
+                    <li>
+                        <a class="pull-right mydownarrow"></a>
+                        <a class="padded-list" style="background-color: white">Dettes Actives</a>
+                        <div class="accordion-content" id="dette-active-list">
+
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <a class="pull-right mydownarrow"></a>
+                        <a class="padded-list" style="background-color: white">Dettes en cours de création</a>
+                        <div class="accordion-content" id="dette-pending-list">
+
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <a class="pull-right mydownarrow"></a>
+                        <a class="padded-list" style="background-color: white">Dettes fermées</a>
+                        <div class="accordion-content" id="dette-closed-list">
+
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <a class="pull-right mydownarrow"></a>
+                        <a class="padded-list" style="background-color: white">Dettes en cours de clôture</a>
+                        <div class="accordion-content" id="dette-pending-closed-list">
+
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <a class="pull-right mydownarrow"></a>
+                        <a class="padded-list" style="background-color: white">Invitations de dettes</a>
+                        <div class="accordion-content">
+                          <div id="dette-invitation">
+
+                          </div>
+                      </div>
+                  </li>
+
+              </ul>
+
+
+          </div>
+      </div>
+  </div>
+
+</div>
+
+</profil>
